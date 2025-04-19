@@ -1,52 +1,68 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Mi primera página web</title>
-</head>
-<body>
 
-    <header>
-        <h1>Bienvenido a mi primera web</h1>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Primera Web</title>
+</head>
+
+<body>
+    <header class="site-header">
+        <h1 class="site-header__title">Bienvenido a mi primera web</h1>
+        <link rel="stylesheet" href="style.css" />
     </header>
 
-    <nav>
-        <ul>
-            <li>Inicio</li>
-            <li>Sobre mí</li>
-            <li>Contacto</li>
+    <nav class="nav">
+        <ul class="nav__menu">
+            <li class="nav_item"><a href="#inicio" class="nav_link">Inicio</a></li>
+            <li class="nav_item"><a href="#sobre-mi" class="nav_link">Sobre mí</a></li>
+            <li class="nav_item"><a href="#contacto" class="nav_link">Contacto</a></li>
         </ul>
     </nav>
 
-    <div>
-        <p>Hola, mi nombre es <span><strong>Juan</strong></span> y estoy aprendiendo a crear páginas web con HTML.</p>
-    </div>
+    <main class="main-content">
 
-    <section>
-        <h2>Mis lenguajes de programación favoritos</h2>
-        <ol>
-            <li>Python</li>
-            <li>JavaScript</li>
-            <li>HTML</li>
-        </ol>
-    </section>
+        <section class="about" id="sobre-mi">
+            <p class="about__text">
+                Hola, soy <span class="about__name">Juan Ignacio</span> y estoy aprendiendo a hacer páginas web.
+            </p>
+        </section>
 
-    <section>
-        <h2>Formulario de contacto</h2>
-        <form>
-            <label for="nombre">Nombre:</label><input type="text" name="nombre"><br><br>
-            <label for="email">Email:</label><input type="email" name="email"><br><br>
-            <input type="submit" value="Enviar">
-        </form>
-    </section>
+        <section class="favorites">
+            <h2 class="favorites__title">Mis lenguajes favoritos</h2>
+            <ol class="favorites__list">
+                <li class="favorites__item">JavaScript</li>
+                <li class="favorites__item">Python</li>
+                <li class="favorites__item">Java</li>
+            </ol>
+        </section>
 
-    <dialog>
-        Gracias por visitar mi sitio.
-    </dialog>
+        <section class="contact" id="contacto">
+            <h2 class="contact__title">Contacto</h2>
+            <form class="contact__form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" class="contact__input" name="nombre" required />
 
-    <footer>
-        <p>Hecho con ♥️ por Juan</p>
+                <label for="email">Correo:</label>
+                <input type="email" id="email" class="contact__input" name="email" required />
+
+                <input type="submit" class="contact__submit" value="Enviar" />
+            </form>
+        </section>
+
+        <section class="message">
+            <dialog class="message__dialog" id="mensaje">
+                Gracias por visitar mi sitio
+            </dialog>
+            <button class="message__button" id="btnVerMensaje">Ver mensaje</button>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p class="site-footer__text">Hecho con ♥️ por Juan Ignacio</p>
     </footer>
-
 </body>
+
 </html>
