@@ -1,0 +1,122 @@
+.site-header {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  .site-header__title {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .nav__menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav_link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .nav_link:hover {
+    color: #0077cc;
+  }
+  
+  .main-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: rgba(13, 11, 11, 0.181);
+  }
+  
+  .about__text {
+    text-align: center;
+    font-size: 1.1em;
+  }
+  
+  .about__name {
+    font-weight: bold;
+  }
+  
+  .favorites__title {
+    text-align: center;
+  }
+  
+  .favorites__list {
+    padding-left: 20px;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .contact__input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+  
+  .contact__submit {
+    background-color: #0a68ab;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact__submit:hover {
+    background-color: rgb(13, 96, 205);
+  }
+  
+  .message__dialog {
+    padding: 20px;
+    border: 2px solid rgb(13, 96, 205);
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+  }
+  
+  .message__button {
+    background-color: rgb(13, 96, 205);
+    color: white;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    cursor: pointer;
+  }
+  
+  .site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    font-size: 0.9em;
+  }
+  
